@@ -1,2 +1,3 @@
-# LambentSciences.github.io
-Website for Lambent Sciences
+# Lambent Sciences Website
+
+A website for Lambent Sciences.

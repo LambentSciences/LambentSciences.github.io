@@ -1,0 +1,92 @@
+:root {
+  --bg: #0b0f17;
+  --bg-alt: #101725;
+  --card: #151e30;
+  --text: #e8edf5;
+  --muted: #9aa8bf;
+  --accent: #ff4d6d;
+  --accent-2: #ffb86b;
+  --border: #25324b;
+  --max: 1080px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+a { color: inherit; }
+
+.site-header {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 24px;
+  background: rgba(11, 15, 23, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: 0.02em; text-decoration: none; }
+.brand-mark {
+  width: 14px; height: 14px; border-radius: 50%;
+  background: radial-gradient(circle, #fff 0%, var(--accent) 45%, transparent 75%);
+  box-shadow: 0 0 14px var(--accent);
+}
+.nav { display: flex; gap: 22px; }
+.nav a { text-decoration: none; color: var(--muted); font-size: 0.95rem; }
+.nav a:hover { color: var(--text); }
+.nav-toggle { display: none; background: none; border: 1px solid var(--border); color: var(--text); padding: 6px 12px; border-radius: 6px; cursor: pointer; }
+
+.hero {
+  max-width: var(--max); margin: 0 auto;
+  padding: 110px 24px 90px;
+  background: radial-gradient(ellipse at 80% 0%, rgba(255, 77, 109, 0.18), transparent 55%);
+}
+.eyebrow { text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.78rem; color: var(--accent-2); margin: 0 0 12px; }
+h1 { font-size: clamp(2.1rem, 5vw, 3.6rem); line-height: 1.12; margin: 0 0 20px; max-width: 18ch; }
+.accent { background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.lead { font-size: 1.2rem; color: var(--muted); max-width: 56ch; }
+.cta-row { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+
+.btn {
+  display: inline-block; padding: 12px 22px; border-radius: 8px;
+  border: 1px solid var(--border); text-decoration: none; font-weight: 600;
+}
+.btn:hover { border-color: var(--accent); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn.primary:hover { filter: brightness(1.1); }
+
+.section { padding: 80px 24px; }
+.section > * { max-width: var(--max); margin-left: auto; margin-right: auto; }
+.section.alt { background: var(--bg-alt); }
+h2 { font-size: 1.9rem; margin-top: 0; margin-bottom: 28px; }
+.section-intro { color: var(--muted); margin-top: -12px; margin-bottom: 28px; }
+
+.two-col { display: grid; grid-template-columns: 1.3fr 1fr; gap: 36px; align-items: start; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 26px; }
+.card h3 { margin-top: 0; }
+.leader h3 { margin-bottom: 2px; font-size: 1.5rem; }
+.role { color: var(--accent-2); margin-top: 0; font-weight: 600; }
+.tag { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-2); margin: 0 0 8px; }
+.link { color: var(--accent); font-weight: 600; text-decoration: none; }
+.link:hover { text-decoration: underline; }
+
+.steps { list-style: none; counter-reset: s; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+.steps li { counter-increment: s; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px; }
+.steps li::before { content: "0" counter(s); color: var(--accent); font-weight: 700; font-size: 0.9rem; }
+.steps span { color: var(--muted); font-size: 0.95rem; }
+
+.site-footer { padding: 30px 24px; text-align: center; color: var(--muted); border-top: 1px solid var(--border); }
+
+@media (max-width: 760px) {
+  .two-col { grid-template-columns: 1fr; }
+  .nav-toggle { display: block; }
+  .nav { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; gap: 0; background: var(--bg); border-bottom: 1px solid var(--border); }
+  .nav.open { display: flex; }
+  .nav a { padding: 14px 24px; border-top: 1px solid var(--border); }
+  .hero { padding-top: 70px; }
+}

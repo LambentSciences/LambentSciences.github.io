@@ -1,0 +1,50 @@
+LAMBENT SCIENCES
+CONCEPT PROPOSAL 03
+
+TITLE
+Ultrafast Laser Micromachining of Glass Microfluidic Devices
+
+PREPARED BY
+Lambent Sciences (CEO: Bhabana Pati)
+
+STATUS
+Concept-stage proposal. Figures and durations below are planning estimates to be confirmed during feasibility.
+
+1. SUMMARY
+Ultrafast lasers can modify transparent materials such as glass with very little heat spread, which makes them well suited to forming microchannels and features directly inside a glass substrate. We propose a direct-write fabrication workflow for microfluidic devices, developed from concept to a demonstrable prototype chip.
+
+2. PROBLEM
+Conventional microfluidic fabrication relies on masks and multi-step processing, which makes early design iteration slow and expensive. Teams want to test a new channel layout in days, not weeks.
+
+3. PROPOSED APPROACH
+- Use an ultrafast laser with a focusing and motion system to write channel patterns directly from a digital design file.
+- Combine laser modification with a follow-on step (such as selective etching) where needed to open the channels.
+- Develop process recipes linking laser parameters to channel size, smoothness, and repeatability.
+- Demonstrate sealed, leak-tested devices with fluid inlets and outlets.
+
+4. EXPECTED BENEFITS
+- No photomasks, so layout changes go from file to part quickly.
+- Three-dimensional channel layouts that are hard to achieve with planar methods.
+- Glass offers good chemical resistance and optical transparency for sensing and imaging.
+
+5. PROGRAM PLAN (CONCEPT TO PROTOTYPE)
+Phase 1 - Concept (about 1 month): Define the target application and the channel geometry requirements.
+Phase 2 - Feasibility (about 2 months): Run initial parameter studies on sample glass and assess channel quality.
+Phase 3 - Design (about 2 months): Design the test device, fluid interfaces, and inspection plan.
+Phase 4 - Build (about 2-3 months): Fabricate prototype chips and refine the process recipe.
+Phase 5 - Test (about 2 months): Measure dimensional accuracy, surface quality, flow performance, and leak tightness.
+Phase 6 - Handoff (about 1 month): Deliver process documentation, test data, and a plan for scaling production.
+
+6. DELIVERABLES
+- Prototype glass microfluidic devices.
+- Documented laser and post-processing recipe.
+- Test report and recommendations for pilot-scale fabrication.
+
+7. KEY RISKS AND MITIGATIONS
+- Channel wall roughness affects flow or optics: tune pulse and scan parameters and evaluate post-processing options early.
+- Throughput too low for the target use: define throughput goals in feasibility and consider parallel or hybrid processing.
+- Substrate variability between glass batches: qualify glass sources and record batch information with each device.
+- Laser safety: design the workstation with appropriate enclosure and interlocks and review with a qualified laser safety officer.
+
+8. NEXT STEP
+Select a representative microfluidic design, then begin Phase 1.

@@ -1,0 +1,51 @@
+LAMBENT SCIENCES
+CONCEPT PROPOSAL 02
+
+TITLE
+Compact Mid-Infrared Laser Source for Portable Gas Sensing
+
+PREPARED BY
+Lambent Sciences (CEO: Bhabana Pati)
+
+STATUS
+Concept-stage proposal. Figures and durations below are planning estimates to be confirmed during feasibility.
+
+1. SUMMARY
+Many gases of interest have strong absorption features in the mid-infrared. We propose a compact, low-power mid-infrared laser source packaged for portable, battery-friendly gas detection, from concept through a field-testable prototype.
+
+2. PROBLEM
+Laboratory-grade mid-infrared sensing is accurate but bulky, power-hungry, and costly. Portable alternatives often trade away selectivity or sensitivity. There is room for a small source that keeps the benefits of direct absorption spectroscopy.
+
+3. PROPOSED APPROACH
+- Select a compact mid-infrared laser type suited to the target gas absorption line.
+- Package the source with thermal control and drive electronics sized for portable use.
+- Pair it with a short-path or multipass sample cell and a detector.
+- Use wavelength modulation or a similar technique to improve sensitivity and reject background.
+- Calibrate against reference gas mixtures.
+
+4. EXPECTED BENEFITS
+- Selective detection based on a gas's own absorption signature.
+- Small size and low power for handheld or fixed-site monitoring.
+- A platform that can be retargeted to other gases by changing the source wavelength.
+
+5. PROGRAM PLAN (CONCEPT TO PROTOTYPE)
+Phase 1 - Concept (about 1 month): Choose target gas, concentration range, and environment.
+Phase 2 - Feasibility (about 2-3 months): Evaluate source options, estimate sensitivity, and define the sample cell approach.
+Phase 3 - Design (about 3 months): Design optics, thermal management, electronics, and enclosure.
+Phase 4 - Build (about 3 months): Assemble the prototype sensor.
+Phase 5 - Test (about 2-3 months): Characterize sensitivity, drift, and cross-sensitivity using reference gases.
+Phase 6 - Handoff (about 1 month): Deliver test data, documentation, and a roadmap to a field pilot.
+
+6. DELIVERABLES
+- Working prototype gas sensor with its laser source.
+- Characterization report covering sensitivity, response time, and stability.
+- Design documentation and recommended next steps.
+
+7. KEY RISKS AND MITIGATIONS
+- Source availability or performance at the needed wavelength: survey suppliers during feasibility and keep a fallback option.
+- Temperature drift affecting calibration: include active thermal control and drift testing across the expected operating range.
+- Interference from other gases or humidity: select absorption lines carefully and test against likely interferents.
+- Laser safety: classify and label the device appropriately and review with a qualified laser safety officer.
+
+8. NEXT STEP
+Confirm the target gas and operating environment, then begin Phase 1.

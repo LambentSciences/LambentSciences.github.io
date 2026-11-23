@@ -9,114 +9,241 @@
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#0b0f17">
+  <meta name="theme-color" content="#0A0B0D">
+  <script>(function(){var d=document.documentElement;if(!window.matchMedia||!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('motion')}})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300..600&family=JetBrains+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Lambent Sciences home">
-      <span class="brand-mark" aria-hidden="true"></span>Lambent Sciences
-    </a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle menu">Menu</button>
-    <nav id="nav" class="nav">
-      <a href="#about">About</a>
-      <a href="#what-we-do">What We Do</a>
-      <a href="#process">Process</a>
-      <a href="#proposals">Concept Proposals</a>
-      <a href="#contact">Contact</a>
+
+<header class="hdr" data-tone="dark">
+  <div class="hdr-in">
+    <div class="hdr-lead">
+      <a class="hdr-brand" href="#top" aria-label="Lambent Sciences, back to the top">
+        <img class="hdr-mark" src="images/logo-mark.svg" alt="" width="26" height="26"><span>Lambent</span>
+      </a>
+      <p class="hdr-tag">Laser technology, concept to prototype</p>
+    </div>
+    <nav class="hdr-nav" aria-label="Main">
+      <a class="link" href="#about">About</a>
+      <a class="link" href="#what-we-do">What we do</a>
+      <a class="link" href="#process">Process</a>
+      <a class="link" href="#proposals">Concept proposals</a>
     </nav>
-  </header>
+    <div class="hdr-side">
+      <a class="hdr-alt" href="#proposals"><span>Proposals</span><svg class="tick" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 1h8v8" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+      <a class="hdr-cta" href="#contact"><span>Contact</span><svg class="tick" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 1h8v8" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+    </div>
+    <button class="ibtn hdr-menu" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="1.4" fill="none"/></svg></button>
+  </div>
+</header>
 
-  <main id="top">
-    <section class="hero">
+<div class="menu" id="menu" data-tone="dark">
+  <nav aria-label="Menu">
+    <a href="#about">About</a>
+    <a href="#what-we-do">What we do</a>
+    <a href="#process">Process</a>
+    <a href="#proposals">Concept proposals</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="menu-foot">
+    <a class="link" href="mailto:Bpati@lam-sci.com">Bpati@lam-sci.com</a>
+  </div>
+</div>
+
+<main id="top">
+
+<section class="hero sheet" data-tone="dark">
+  <div class="hero-grid">
+    <div class="hero-word"><h1 class="giant" style="--len:7" aria-label="Lambent Sciences">Lamb<em>e</em>nt</h1></div>
+    <div class="hero-meta mono">
+      <span><b>Field</b> Laser technology</span>
+      <span><b>Scope</b> Concept to prototype</span>
+      <span><b>Proposals</b> 03 published</span>
+    </div>
+    <figure class="hero-window">
+      <canvas id="beam" aria-hidden="true"></canvas>
+      <span class="hud tl"><i></i>Beam field / illustrative</span>
+      <span class="hud br">Concept<br>&rarr; Prototype</span>
+    </figure>
+    <div class="hero-intro">
       <p class="eyebrow">Laser technology, from idea to hardware</p>
-      <h1>Bright ideas, <span class="accent">built into working prototypes.</span></h1>
+      <p class="hero-line">Bright ideas, <em>built into working prototypes.</em></p>
       <p class="lead">Lambent Sciences writes proposals around innovative laser ideas and manages the program all the way from concept to prototype.</p>
-      <div class="cta-row">
-        <a class="btn primary" href="#proposals">View Concept Proposals</a>
-        <a class="btn" href="#contact">Start a conversation</a>
+      <div class="actions">
+        <a class="btn" href="#proposals"><span>View concept proposals</span><svg class="tick" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 1h8v8" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+        <a class="link" href="#contact">Start a conversation</a>
       </div>
-    </section>
+    </div>
+    <div class="hero-aim">
+      <p class="mono soft">One program</p>
+      <p class="num">06</p>
+      <p class="soft">stages from the first concept to a measured, documented prototype.</p>
+    </div>
+  </div>
+</section>
 
-    <section id="about" class="section">
-      <h2>About</h2>
-      <div class="two-col">
-        <p>Lambent Sciences is a laser technology company focused on turning promising optical ideas into tested, demonstrable prototypes. We combine proposal writing, technical planning, and hands-on program management so that an idea never stalls between the whiteboard and the lab bench.</p>
-        <div class="card leader">
-          <p class="eyebrow">Leadership</p>
-          <h3>Bhabana Pati</h3>
-          <p class="role">Chief Executive Officer</p>
-          <p>Bhabana Pati leads Lambent Sciences, setting the technical direction and ensuring every program is scoped, staffed, and delivered with clear milestones.</p>
-        </div>
-      </div>
-    </section>
+<section class="about sheet" id="about" data-tone="dark">
+  <div class="grid about-top">
+    <div class="about-head">
+      <p class="eyebrow">01 &mdash; About</p>
+      <h2>From the whiteboard <em>to the lab bench.</em></h2>
+    </div>
+    <div class="about-copy" data-reveal>
+      <p class="lead">Lambent Sciences is a laser technology company focused on turning promising optical ideas into tested, demonstrable prototypes.</p>
+      <p class="soft">We combine proposal writing, technical planning, and hands-on program management so that an idea never stalls between the whiteboard and the lab bench.</p>
+    </div>
+    <article class="leader" data-reveal>
+      <p class="mono soft">Leadership</p>
+      <h3>Bhabana Pati</h3>
+      <p class="mono acc">Chief Executive Officer</p>
+      <p class="soft">Bhabana Pati leads Lambent Sciences, setting the technical direction and ensuring every program is scoped, staffed, and delivered with clear milestones.</p>
+    </article>
+  </div>
+  <ul class="facts grid">
+    <li class="fact" data-reveal><span class="fact-rule"></span><strong class="fact-num">01</strong><span class="fact-label">accountable team from proposal to handoff</span></li>
+    <li class="fact" data-reveal><span class="fact-rule"></span><strong class="fact-num">03</strong><span class="fact-label">published concept proposals</span></li>
+    <li class="fact" data-reveal><span class="fact-rule"></span><strong class="fact-num">06</strong><span class="fact-label">program stages, concept to handoff</span></li>
+    <li class="fact" data-reveal><span class="fact-rule"></span><strong class="fact-num">1:1</strong><span class="fact-label">every program ends in hardware you can measure</span></li>
+  </ul>
+</section>
 
-    <section id="what-we-do" class="section alt">
-      <h2>What We Do</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Innovative Laser Proposals</h3>
-          <p>We develop and write proposals built on new laser concepts: the problem, the approach, the milestones, and the risks, laid out clearly enough to fund and to execute.</p>
-        </article>
-        <article class="card">
-          <h3>Program Management</h3>
-          <p>We manage programs from concept to prototype: schedule, scope, suppliers, test plans, and reporting, with one accountable team throughout.</p>
-        </article>
-        <article class="card">
-          <h3>Prototype Delivery</h3>
-          <p>Each program ends in something you can hold and measure: a working prototype, its test data, and a documented path to the next stage.</p>
-        </article>
-      </div>
-    </section>
+<section class="services sheet" id="what-we-do" data-tone="ivory">
+  <div class="grid svc-head">
+    <div class="h">
+      <p class="eyebrow">02 &mdash; What we do</p>
+      <h2>Proposal, program, <em>prototype.</em></h2>
+    </div>
+    <p class="soft">Three disciplines, one team, so nothing is lost between the idea, the plan and the build.</p>
+  </div>
+  <div class="svc-list">
+    <article class="svc" data-reveal>
+      <figure class="svc-media frame" data-viz="proposal"></figure>
+      <p class="svc-idx">01 / 03</p>
+      <h3>Innovative laser proposals</h3>
+      <p class="svc-text">We develop and write proposals built on new laser concepts: the problem, the approach, the milestones, and the risks, laid out clearly enough to fund and to execute.</p>
+      <ul class="svc-points"><li>Problem framing</li><li>Technical approach</li><li>Milestones &amp; risks</li></ul>
+    </article>
+    <article class="svc" data-reveal>
+      <figure class="svc-media frame" data-viz="program"></figure>
+      <p class="svc-idx">02 / 03</p>
+      <h3>Program management</h3>
+      <p class="svc-text">We manage programs from concept to prototype: schedule, scope, suppliers, test plans, and reporting, with one accountable team throughout.</p>
+      <ul class="svc-points"><li>Schedule &amp; scope</li><li>Suppliers</li><li>Test plans</li><li>Reporting</li></ul>
+    </article>
+    <article class="svc" data-reveal>
+      <figure class="svc-media frame" data-viz="prototype"></figure>
+      <p class="svc-idx">03 / 03</p>
+      <h3>Prototype delivery</h3>
+      <p class="svc-text">Each program ends in something you can hold and measure: a working prototype, its test data, and a documented path to the next stage.</p>
+      <ul class="svc-points"><li>Working hardware</li><li>Test data</li><li>Next-stage path</li></ul>
+    </article>
+  </div>
+</section>
 
-    <section id="process" class="section">
-      <h2>Concept to Prototype</h2>
+<section class="process sheet" id="process" data-tone="bone">
+  <div class="grid pc-grid">
+    <div class="pc-head">
+      <p class="eyebrow">03 &mdash; Process</p>
+      <h2>Concept <em>to prototype</em></h2>
+      <p class="soft">Six stages, each with a clear output, so every program can be planned, funded and tracked.</p>
+      <a class="btn btn-line" href="#contact"><span>Discuss a program</span><svg class="tick" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 1h8v8" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+    </div>
+    <div class="pc-track">
+      <span class="pc-fill" aria-hidden="true"></span>
       <ol class="steps">
-        <li><strong>Concept</strong><span>Define the problem and the laser approach worth pursuing.</span></li>
-        <li><strong>Feasibility</strong><span>Model, estimate, and identify the main technical risks.</span></li>
-        <li><strong>Design</strong><span>Specify optics, source, controls, and safety requirements.</span></li>
-        <li><strong>Build</strong><span>Assemble and integrate the prototype with qualified suppliers.</span></li>
-        <li><strong>Test</strong><span>Measure performance against the agreed targets.</span></li>
-        <li><strong>Handoff</strong><span>Deliver data, documentation, and recommended next steps.</span></li>
+        <li class="step"><p class="step-when">Stage 01</p><h3>Concept</h3><p>Define the problem and the laser approach worth pursuing.</p></li>
+        <li class="step"><p class="step-when">Stage 02</p><h3>Feasibility</h3><p>Model, estimate, and identify the main technical risks.</p></li>
+        <li class="step"><p class="step-when">Stage 03</p><h3>Design</h3><p>Specify optics, source, controls, and safety requirements.</p></li>
+        <li class="step"><p class="step-when">Stage 04</p><h3>Build</h3><p>Assemble and integrate the prototype with qualified suppliers.</p></li>
+        <li class="step"><p class="step-when">Stage 05</p><h3>Test</h3><p>Measure performance against the agreed targets.</p></li>
+        <li class="step"><p class="step-when">Stage 06</p><h3>Handoff</h3><p>Deliver data, documentation, and recommended next steps.</p></li>
       </ol>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section id="proposals" class="section alt">
-      <h2>Concept Proposals</h2>
-      <p class="section-intro">These are concept-stage proposals that show how we frame a laser idea. They are not final designs or commitments; figures and durations are planning estimates to be confirmed during feasibility. Each is a plain text document.</p>
-      <div class="grid">
-        <article class="card">
-          <p class="tag">Concept Proposal 01</p>
-          <h3>Adaptive Beam-Shaping for Precision Laser Processing</h3>
-          <p>A closed-loop system that reshapes the laser beam in real time to hold quality steady as materials and conditions vary.</p>
-          <a class="link" href="proposals/01-adaptive-beam-shaping.txt">Read the concept proposal &rarr;</a>
-        </article>
-        <article class="card">
-          <p class="tag">Concept Proposal 02</p>
-          <h3>Compact Mid-Infrared Laser Source for Gas Sensing</h3>
-          <p>A small, low-power mid-infrared source designed for portable detection of trace gases.</p>
-          <a class="link" href="proposals/02-compact-mid-ir-gas-sensing.txt">Read the concept proposal &rarr;</a>
-        </article>
-        <article class="card">
-          <p class="tag">Concept Proposal 03</p>
-          <h3>Ultrafast Laser Micromachining of Glass Microfluidics</h3>
-          <p>Direct-write ultrafast laser fabrication of microchannels in glass, with no masks and fast design iteration.</p>
-          <a class="link" href="proposals/03-ultrafast-glass-microfluidics.txt">Read the concept proposal &rarr;</a>
-        </article>
-      </div>
-    </section>
+<section class="proposals sheet" id="proposals" data-tone="dark">
+  <div class="grid pr-head">
+    <div class="h">
+      <p class="eyebrow">04 &mdash; Concept proposals</p>
+      <h2>How we <em>frame</em> a laser idea</h2>
+    </div>
+    <p class="soft">These are concept-stage proposals. They are not final designs or commitments; figures and durations are planning estimates to be confirmed during feasibility. Each is a plain text document.</p>
+  </div>
+  <ol class="pr-list">
+    <li class="pr" data-reveal>
+      <a class="pr-row" href="proposals/01-adaptive-beam-shaping.txt">
+        <span class="pr-idx">CP&mdash;01</span>
+        <span class="pr-main"><span class="pr-title">Adaptive Beam-Shaping for Precision Laser Processing</span><span class="pr-text">A closed-loop system that reshapes the laser beam in real time to hold quality steady as materials and conditions vary.</span></span>
+        <span class="pr-go"><span>Read proposal</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13L13 3M5 3h8v8" stroke="currentColor" stroke-width="1.4" fill="none"/></svg></span>
+      </a>
+    </li>
+    <li class="pr" data-reveal>
+      <a class="pr-row" href="proposals/02-compact-mid-ir-gas-sensing.txt">
+        <span class="pr-idx">CP&mdash;02</span>
+        <span class="pr-main"><span class="pr-title">Compact Mid-Infrared Laser Source for Gas Sensing</span><span class="pr-text">A small, low-power mid-infrared source designed for portable detection of trace gases.</span></span>
+        <span class="pr-go"><span>Read proposal</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13L13 3M5 3h8v8" stroke="currentColor" stroke-width="1.4" fill="none"/></svg></span>
+      </a>
+    </li>
+    <li class="pr" data-reveal>
+      <a class="pr-row" href="proposals/03-ultrafast-glass-microfluidics.txt">
+        <span class="pr-idx">CP&mdash;03</span>
+        <span class="pr-main"><span class="pr-title">Ultrafast Laser Micromachining of Glass Microfluidics</span><span class="pr-text">Direct-write ultrafast laser fabrication of microchannels in glass, with no masks and fast design iteration.</span></span>
+        <span class="pr-go"><span>Read proposal</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13L13 3M5 3h8v8" stroke="currentColor" stroke-width="1.4" fill="none"/></svg></span>
+      </a>
+    </li>
+  </ol>
+</section>
 
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Interested in working with us? Get in touch.</p>
-      <p><a class="btn primary" href="mailto:Bpati@lam-sci.com">Email Us</a></p>
-    </section>
-  </main>
+<section class="contact sheet" id="contact" data-tone="amber">
+  <div class="grid ct-grid">
+    <div class="ct-head">
+      <p class="eyebrow">05 &mdash; Contact</p>
+      <h2>Have a laser idea <em>worth building?</em></h2>
+    </div>
+    <div class="ct-copy">
+      <p class="lead">Interested in working with us? Get in touch.</p>
+      <a class="btn" href="mailto:Bpati@lam-sci.com"><span>Email us</span><svg class="tick" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 1h8v8" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+      <a class="link mono" href="mailto:Bpati@lam-sci.com">Bpati@lam-sci.com</a>
+    </div>
+  </div>
+</section>
 
-  <footer class="site-footer">
-    <p>&copy; <span id="year">2026</span> Lambent Sciences. All rights reserved.</p>
-  </footer>
+</main>
 
-  <script src="script.js"></script>
+<footer class="ftr" data-tone="dark">
+  <div class="grid ftr-grid">
+    <div class="ftr-col ftr-lead">
+      <p>Bright ideas, built into working prototypes.</p>
+    </div>
+    <nav class="ftr-col" aria-label="Company">
+      <p class="ftr-h">Company</p>
+      <a class="link" href="#about">About</a>
+      <a class="link" href="#what-we-do">What we do</a>
+      <a class="link" href="#process">Process</a>
+    </nav>
+    <nav class="ftr-col" aria-label="Proposals">
+      <p class="ftr-h">Proposals</p>
+      <a class="link" href="proposals/01-adaptive-beam-shaping.txt">Adaptive beam-shaping</a>
+      <a class="link" href="proposals/02-compact-mid-ir-gas-sensing.txt">Mid-IR gas sensing</a>
+      <a class="link" href="proposals/03-ultrafast-glass-microfluidics.txt">Glass microfluidics</a>
+    </nav>
+    <div class="ftr-col">
+      <p class="ftr-h">Contact</p>
+      <a class="link" href="mailto:Bpati@lam-sci.com">Email us</a>
+      <a class="ibtn ftr-top" href="#top" aria-label="Back to the top"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14V2M3 7l5-5 5 5" stroke="currentColor" stroke-width="1.4" fill="none"/></svg></a>
+    </div>
+  </div>
+  <div class="ftr-word" style="--len:7" aria-hidden="true">Lamb<em>e</em>nt</div>
+  <div class="ftr-base">
+    <span>&copy; <span id="year">2026</span> Lambent Sciences. All rights reserved.</span>
+    <a class="link" href="#top">Back to top</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
